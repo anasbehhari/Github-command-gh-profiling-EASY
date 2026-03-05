@@ -1,33 +1,148 @@
-# gh-config
+# 🚀 gh-config
 
-A simple batch script to manage multiple Git profiles.
+A simple **Windows batch script** to manage multiple Git profiles easily from the command line.
 
-## Description
+This tool helps developers quickly switch between different Git identities (for example: work, personal, or open-source accounts) without manually editing Git configuration files.
 
-This script allows you to easily create, switch between, list, and delete different Git configurations. It's useful for managing different Git identities for work, personal projects, etc.
+---
 
-## Usage
+## 📌 Features
 
-1.  **Download:** Download the `gh-config.bat` file.
-2.  **Save:** Save it to a convenient location on your system (e.g., `C:\gh-config`).
-3.  **Add to PATH (Optional but Recommended):** Add the directory where you saved `gh-config.bat` to your system's PATH environment variable. This will allow you to run the script from any directory in your terminal.
-4.  **Run:** Open a command prompt or terminal and use the following commands:
+- Create multiple Git profiles
+- Switch between profiles instantly
+- List all available profiles
+- Delete unused profiles
+- Simple command-line interface
+- Lightweight and easy to use
 
-    - `gh-config create`: Creates a new Git profile.
-    - `gh-config use [profile_name]`: Switches to the specified Git profile.
-    - `gh-config list`: Lists all available Git profiles.
-    - `gh-config delete [profile_name]`: Deletes the specified Git profile.
-    - `gh-config`: Lists all available Git profiles (default action).
+---
 
-## Example
+## 📖 Description
 
-```bash
+When working with multiple Git accounts, developers often need to change their **username and email configuration** depending on the project they are working on.
+
+The `gh-config` script simplifies this process by allowing you to create and manage multiple Git profiles and switch between them with a single command.
+
+This avoids repeatedly running manual Git configuration commands such as:
+
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+
+---
+
+## ⚙️ Requirements
+
+Before using this script, make sure you have:
+
+- Git installed
+- Windows Command Prompt or PowerShell
+- Basic Git knowledge
+
+---
+
+## 📥 Installation
+
+1. Download the file:
+
+   gh-config.bat
+
+2. Save it to a convenient location, for example:
+
+   C:\gh-config
+
+3. (Optional but recommended) Add the folder to your **System PATH** so you can run the command from anywhere.
+
+Example PATH location:
+
+   C:\gh-config
+
+After adding it to PATH, restart your terminal.
+
+---
+
+## 💻 Usage
+
+Open **Command Prompt** or **PowerShell** and run:
+
+gh-config
+
+This will display the list of available Git profiles.
+
+---
+
+## 🧪 Commands
+
+Create a new profile:
+
+gh-config create
+
+Switch to a profile:
+
+gh-config use [profile_name]
+
+Example:
+
+gh-config use work
+
+List all profiles:
+
+gh-config list
+
+Delete a profile:
+
+gh-config delete [profile_name]
+
+Example:
+
+gh-config delete personal
+
+Default command (lists profiles):
+
+gh-config
+
+---
+
+## 📂 Example
+
 gh-config create
 Enter profile name: work
-Enter email: [email address removed]
+Enter email: work@email.com
 Enter username: Work User
 
 gh-config use work
 
 gh-config list
-```
+
+Output example:
+
+Available profiles:
+- work
+- personal
+
+---
+
+## 🚀 Why Use gh-config
+
+Managing multiple Git identities manually can be time-consuming and error-prone.
+
+This tool allows you to:
+
+- Switch Git accounts instantly
+- Avoid committing with the wrong identity
+- Simplify development workflows
+- Improve productivity when working across multiple projects
+
+---
+
+## 👨‍💻 Author
+
+Anas Behhari
+
+GitHub:
+https://github.com/anasbehhari
+
+---
+
+## ⭐ Support
+
+If you find this project useful, consider giving the repository a **star** on GitHub.
